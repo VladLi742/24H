@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.none {
+    display: none;
+}
+
+.btn_sort-by-distance {
+    width: 100%;
+    font-size: 21px;
+    padding: 7px 15px;
+    background: white;
+    border: unset;
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__th {
+    width: 10%;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.table__tr {
+    border: 1px solid black;
+}
+
+.table__td {
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.loading-screen__bar {
+    height: 38px;
+    text-align: center;
+}
+
+.loading-screen__bar:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: inherit;
+    background: #00adff;
+    position: absolute;
+    animation: progress 5s infinite linear;
+}
+
+.loading-screen__text {
+    width: 100%;
+    padding: 7px 15px;
+    font-size: 21px;
+    position: absolute;
+    left: 0;
+    animation: change-color 5s infinite cubic-bezier(0.6, 0.5, 0.3, 1);
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        color: black;
+    }
+
+    100% {
+        width: 100%;
+        color: white;
+    }
+}
+
+@keyframes change-color {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: #fff;
+    }
+}

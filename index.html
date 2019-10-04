@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список самолётов</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section id="airplanes" class="none">
+        <button id="btn_sort-by-distance" class="btn_sort-by-distance">
+            Сортировать по увеличению расстояния от аэропорта «Домодедово»
+        </button>
+        <table id="table" class="table">
+            <thead>
+            <tr>
+                <th class="table__th">координаты</th>
+                <th class="table__th">скорость в км/ч</th>
+                <th class="table__th">курс в градусах</th>
+                <th class="table__th">высота в метрах</th>
+                <th class="table__th">коды аэропортов вылета и назначения</th>
+                <th class="table__th">№ рейса</th>
+            </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </section>
+    <div id="loading-screen" class="loading-screen none">
+        <div class="loading-screen__bar">
+            <div class="loading-screen__text">Список самолётов загружается...</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
